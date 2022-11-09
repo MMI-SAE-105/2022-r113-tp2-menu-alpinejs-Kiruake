@@ -11,9 +11,9 @@
     <!-- https://emmet.io/ -->
     <!-- header>h1{Test de menu} -->
     <header>
-      <button aria-controls="mainNav">menu</button>
+      <button aria-controls="mainNav"@click="MenuIsOpen= ! MenuIsOpen"></button> menu</button>
       <h1>Test de menu</h1>
-      <nav id="mainNav" x-show="MenuIsOpen">
+      <nav id="mainNav" x-show="MenuIsOpen" x-transition.duration.800ms>
         <ul>
           <li><a href="#">item 1</a></li>
           <li><a href="#">item 2</a></li>
